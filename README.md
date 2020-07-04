@@ -18,8 +18,11 @@ The script is invented to analyze the data from UCI HAR Dataset. It's supposed t
 1- Downloads to R ids and descriptions for features being measured in experiment from file **features.txt**.
 
 2- Independently loads complete data for train and test sets. Let's revoke these loading process considering train set:
+
 - Firstly loads the measurements from X_train.txt as a data frame
+
 - For these data frame column names are updated to be more user friendly using features description loaded on the previous stage. (STEP 4: Appropriately label the data set with descriptive variable names of Course Project
+
 - activity labels and subjects for measurements are also loaded from files train/y_train.txt and train/subject_train.txt and added to data frame as a separated columns.
 
 Similar steps are made for test dataset and finally 2 rows of 2 data frames are merged together to form are data frame with complete data (**STEP 1:** Merge the training and the test sets to create one data set of assignment)
